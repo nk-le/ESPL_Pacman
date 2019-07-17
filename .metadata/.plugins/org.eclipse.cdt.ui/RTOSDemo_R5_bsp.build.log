@@ -1,0 +1,195 @@
+15:35:22 **** Build of project RTOSDemo_R5_bsp ****
+make -k all 
+Running Make include in psu_cortexr5_0/libsrc/axipmon_v6_5/src
+make -C psu_cortexr5_0/libsrc/axipmon_v6_5/src -s include  "SHELL=/bin/sh" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5"
+cp: cannot create regular file ‘../../../include/xaxipmon.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xaxipmon_hw.h’: Permission denied
+Running Make include in psu_cortexr5_0/libsrc/canps_v3_2/src
+make[1]: *** [include] Error 1
+make -C psu_cortexr5_0/libsrc/canps_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5"
+make: *** [psu_cortexr5_0/libsrc/axipmon_v6_5/src/make.include] Error 2
+Running Make include in psu_cortexr5_0/libsrc/coresightps_dcc_v1_3/src
+cp: cannot create regular file ‘../../../include/xcanps.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xcanps_hw.h’: Permission denied
+make -C psu_cortexr5_0/libsrc/coresightps_dcc_v1_3/src -s include  "SHELL=/bin/sh" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5"
+make[1]: *** [xcanps_includes] Error 1
+make[1]: Target `include' not remade because of errors.
+Running Make include in psu_cortexr5_0/libsrc/cpu_cortexr5_v1_1/src
+make -C psu_cortexr5_0/libsrc/cpu_cortexr5_v1_1/src -s include  "SHELL=/bin/sh" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5"
+make: *** [psu_cortexr5_0/libsrc/canps_v3_2/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xcoresightpsdcc.h’: Permission denied
+make[1]: *** [coresightps_dcc_includes] Error 1
+Running Make include in psu_cortexr5_0/libsrc/csudma_v1_1/src
+make[1]: Target `include' not remade because of errors.
+make: *** [psu_cortexr5_0/libsrc/coresightps_dcc_v1_3/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xcpu_cortexr5.h’: Permission denied
+make[1]: *** [include] Error 1
+make: *** [psu_cortexr5_0/libsrc/cpu_cortexr5_v1_1/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xcsudma.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xcsudma_hw.h’: Permission denied
+make[1]: *** [csudma_includes] Error 1
+make -C psu_cortexr5_0/libsrc/csudma_v1_1/src -s include  "SHELL=/bin/sh" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5"
+make[1]: Target `include' not remade because of errors.
+Running Make include in psu_cortexr5_0/libsrc/ddrcpsu_v1_1/src
+make: *** [psu_cortexr5_0/libsrc/csudma_v1_1/src/make.include] Error 2
+make -C psu_cortexr5_0/libsrc/ddrcpsu_v1_1/src -s include  "SHELL=/bin/sh" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5"
+cp: cannot create regular file ‘../../../include/xddrcpsu.h’: Permission denied
+Running Make include in psu_cortexr5_0/libsrc/emacps_v3_3/src
+make[1]: *** [xddrcpsu_includes] Error 1
+make -C psu_cortexr5_0/libsrc/emacps_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5"
+make[1]: Target `include' not remade because of errors.
+make: *** [psu_cortexr5_0/libsrc/ddrcpsu_v1_1/src/make.include] Error 2
+Running Make include in psu_cortexr5_0/libsrc/gpiops_v3_1/src
+make -C psu_cortexr5_0/libsrc/gpiops_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5"
+cp: cannot create regular file ‘../../../include/xemacps.h’: Permission denied
+Running Make include in psu_cortexr5_0/libsrc/iicps_v3_4/src
+make -C psu_cortexr5_0/libsrc/iicps_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5"
+cp: cannot create regular file ‘../../../include/xemacps_bd.h’: Permission denied
+Running Make include in psu_cortexr5_0/libsrc/ipipsu_v2_1/src
+cp: cannot create regular file ‘../../../include/xemacps_bdring.h’: Permission denied
+make -C psu_cortexr5_0/libsrc/ipipsu_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5"
+cp: cannot create regular file ‘../../../include/xemacps_hw.h’: Permission denied
+make[1]: *** [xemacps_includes] Error 1
+make[1]: Target `include' not remade because of errors.
+Running Make include in psu_cortexr5_0/libsrc/qspipsu_v1_3/src
+make: *** [psu_cortexr5_0/libsrc/emacps_v3_3/src/make.include] Error 2
+make -C psu_cortexr5_0/libsrc/qspipsu_v1_3/src -s include  "SHELL=/bin/sh" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5"
+cp: cannot create regular file ‘../../../include/xgpiops.h’: Permission denied
+Running Make include in psu_cortexr5_0/libsrc/rtcpsu_v1_3/src
+cp: cannot create regular file ‘../../../include/xgpiops_hw.h’: Permission denied
+make[1]: *** [xgpiops_includes] Error 1
+make -C psu_cortexr5_0/libsrc/rtcpsu_v1_3/src -s include  "SHELL=/bin/sh" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5"
+make[1]: Target `include' not remade because of errors.
+Running Make include in psu_cortexr5_0/libsrc/scugic_v3_5/src
+make: *** [psu_cortexr5_0/libsrc/gpiops_v3_1/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xiicps.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xiicps_hw.h’: Permission denied
+make -C psu_cortexr5_0/libsrc/scugic_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5"
+make[1]: *** [xiicps_includes] Error 1
+Running Make include in psu_cortexr5_0/libsrc/sdps_v3_1/src
+make[1]: Target `include' not remade because of errors.
+make -C psu_cortexr5_0/libsrc/sdps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5"
+make: *** [psu_cortexr5_0/libsrc/iicps_v3_4/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xipipsu.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xipipsu_hw.h’: Permission denied
+make[1]: *** [xipipsu_includes] Error 1
+Running Make include in psu_cortexr5_0/libsrc/standalone_v6_1/src
+make[1]: Target `include' not remade because of errors.
+make: *** [psu_cortexr5_0/libsrc/ipipsu_v2_1/src/make.include] Error 2
+make -C psu_cortexr5_0/libsrc/standalone_v6_1/src -s include  "SHELL=/bin/sh" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5"
+cp: cannot create regular file ‘../../../include/xqspipsu.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xqspipsu_hw.h’: Permission denied
+Running Make include in psu_cortexr5_0/libsrc/sysmonpsu_v2_0/src
+make[1]: *** [xqspipsu_includes] Error 1
+make -C psu_cortexr5_0/libsrc/sysmonpsu_v2_0/src -s include  "SHELL=/bin/sh" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5"
+make[1]: Target `include' not remade because of errors.
+make: *** [psu_cortexr5_0/libsrc/qspipsu_v1_3/src/make.include] Error 2
+Running Make include in psu_cortexr5_0/libsrc/ttcps_v3_2/src
+make -C psu_cortexr5_0/libsrc/ttcps_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5"
+cp: cannot create regular file ‘../../../include/xrtcpsu.h’: Permission denied
+Running Make include in psu_cortexr5_0/libsrc/uartps_v3_3/src
+cp: cannot create regular file ‘../../../include/xrtcpsu_hw.h’: Permission denied
+make -C psu_cortexr5_0/libsrc/uartps_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5"
+make[1]: *** [xrtcpsu_includes] Error 1
+Running Make include in psu_cortexr5_0/libsrc/usbpsu_v1_1/src
+make[1]: Target `include' not remade because of errors.
+make -C psu_cortexr5_0/libsrc/usbpsu_v1_1/src -s include  "SHELL=/bin/sh" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5"
+make: *** [psu_cortexr5_0/libsrc/rtcpsu_v1_3/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xscugic.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xscugic_hw.h’: Permission denied
+Running Make include in psu_cortexr5_0/libsrc/wdtps_v3_0/src
+make[1]: *** [scugic_includes] Error 1
+make -C psu_cortexr5_0/libsrc/wdtps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5"
+make[1]: Target `include' not remade because of errors.
+Running Make include in psu_cortexr5_0/libsrc/zdma_v1_1/src
+make: *** [psu_cortexr5_0/libsrc/scugic_v3_5/src/make.include] Error 2
+make -C psu_cortexr5_0/libsrc/zdma_v1_1/src -s include  "SHELL=/bin/sh" "COMPILER=armr5-none-eabi-gcc" "ARCHIVER=armr5-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=cortex-r5" "EXTRA_COMPILER_FLAGS=-g -DARMR5"
+cp: cannot create regular file ‘../../../include/xsdps.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xsdps_hw.h’: Permission denied
+make[1]: *** [xsdps_includes] Error 1
+make[1]: Target `include' not remade because of errors.
+make: *** [psu_cortexr5_0/libsrc/sdps_v3_1/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/bspconfig.h’: Permission denied
+cp: cannot create regular file ‘../../../include/sleep.h’: Permission denied
+cp: cannot create regular file ‘../../../include/vectors.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xbasic_types.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xdebug.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xenv.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xenv_standalone.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_assert.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_cache.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_cache_vxworks.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_exception.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_hal.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_io.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_macroback.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_mmu.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_mpu.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_printf.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_testcache.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_testio.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_testmem.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_types.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xparameters_ps.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xplatform_info.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xpm_counter.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xpseudo_asm.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xpseudo_asm_gcc.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xreg_cortexr5.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xstatus.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xtime_l.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xddr_xmpu0_cfg.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xddr_xmpu1_cfg.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xddr_xmpu2_cfg.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xddr_xmpu3_cfg.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xddr_xmpu4_cfg.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xddr_xmpu5_cfg.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xfpd_slcr.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xfpd_slcr_secure.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xfpd_xmpu_cfg.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xfpd_xmpu_sink.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xiou_secure_slcr.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xiou_slcr.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xlpd_slcr.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xlpd_slcr_secure.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xlpd_xppu.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xlpd_xppu_sink.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xocm_xmpu_cfg.h’: Permission denied
+make[1]: *** [standalone_includes] Error 1
+make[1]: Target `include' not remade because of errors.
+make: *** [psu_cortexr5_0/libsrc/standalone_v6_1/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xsysmonpsu.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xsysmonpsu_hw.h’: Permission denied
+make[1]: *** [xsysmonpsu_includes] Error 1
+make[1]: Target `include' not remade because of errors.
+make: *** [psu_cortexr5_0/libsrc/sysmonpsu_v2_0/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xttcps.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xttcps_hw.h’: Permission denied
+make[1]: *** [ttcps_includes] Error 1
+make[1]: Target `include' not remade because of errors.
+make: *** [psu_cortexr5_0/libsrc/ttcps_v3_2/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xuartps.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xuartps_hw.h’: Permission denied
+make[1]: *** [xuartps_includes] Error 1
+make[1]: Target `include' not remade because of errors.
+make: *** [psu_cortexr5_0/libsrc/uartps_v3_3/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xusbpsu.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xusbpsu_endpoint.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xusbpsu_hw.h’: Permission denied
+make[1]: *** [xusbps_includes] Error 1
+make[1]: Target `include' not remade because of errors.
+make: *** [psu_cortexr5_0/libsrc/usbpsu_v1_1/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xwdtps.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xwdtps_hw.h’: Permission denied
+make[1]: *** [wdtps_includes] Error 1
+make[1]: Target `include' not remade because of errors.
+make: *** [psu_cortexr5_0/libsrc/wdtps_v3_0/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xzdma.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xzdma_hw.h’: Permission denied
+make[1]: *** [zdma_includes] Error 1
+make[1]: Target `include' not remade because of errors.
+make: *** [psu_cortexr5_0/libsrc/zdma_v1_1/src/make.include] Error 2
+make: Target `all' not remade because of errors.
+
+15:35:22 Build Finished (took 622ms)
+

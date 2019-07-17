@@ -1,0 +1,10 @@
+/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/rebuild_cache.dir
+/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/edit_cache.dir
+/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/flash.dir
+/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/ugfxlib.dir
+/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/usrlib.dir
+/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/Demo.bin.dir
+/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/stmutilitieslib.dir
+/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/rtoslib.dir
+/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/Demo.elf.dir
+/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/stmperipheralslib.dir

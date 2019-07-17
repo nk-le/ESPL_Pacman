@@ -1,0 +1,175 @@
+15:35:22 **** Build of project RTOSDemo_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/canps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/canps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+cp: cannot create regular file ‘../../../include/xcanps.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xcanps_hw.h’: Permission denied
+make[1]: *** [xcanps_includes] Error 1
+make[1]: Target `include' not remade because of errors.
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src
+make: *** [ps7_cortexa9_0/libsrc/canps_v3_1/src/make.include] Error 2
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+cp: cannot create regular file ‘../../../include/xcoresightpsdcc.h’: Permission denied
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src
+make[1]: *** [coresightps_dcc_includes] Error 1
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+make[1]: Target `include' not remade because of errors.
+make: *** [ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xcpu_cortexa9.h’: Permission denied
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make[1]: *** [include] Error 1
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+make: *** [ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src/make.include] Error 2
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src
+cp: cannot create regular file ‘../../../include/xddrps.h’: Permission denied
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+make[1]: *** [xddrps_includes] Error 1
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make[1]: Target `include' not remade because of errors.
+make: *** [ps7_cortexa9_0/libsrc/ddrps_v1_0/src/make.include] Error 2
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+cp: cannot create regular file ‘../../../include/xdevcfg.h’: Permission denied
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_2/src
+cp: cannot create regular file ‘../../../include/xdevcfg_hw.h’: Permission denied
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+make[1]: *** [xdevcfg_includes] Error 1
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+make[1]: Target `include' not remade because of errors.
+make: *** [ps7_cortexa9_0/libsrc/devcfg_v3_4/src/make.include] Error 2
+Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/iicps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+cp: cannot create regular file ‘../../../include/xdmaps.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xdmaps_hw.h’: Permission denied
+make[1]: *** [xdmaps_includes] Error 1
+make[1]: Target `include' not remade because of errors.
+make: *** [ps7_cortexa9_0/libsrc/dmaps_v2_1/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xemacps.h’: Permission denied
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src
+cp: cannot create regular file ‘../../../include/xemacps_bd.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xemacps_bdring.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xemacps_hw.h’: Permission denied
+make[1]: *** [xemacps_includes] Error 1
+make[1]: Target `include' not remade because of errors.
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+make: *** [ps7_cortexa9_0/libsrc/emacps_v3_2/src/make.include] Error 2
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_2/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+cp: cannot create regular file ‘../../../include/xgpiops.h’: Permission denied
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+cp: cannot create regular file ‘../../../include/xgpiops_hw.h’: Permission denied
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+make[1]: *** [xgpiops_includes] Error 1
+make[1]: Target `include' not remade because of errors.
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make: *** [ps7_cortexa9_0/libsrc/gpiops_v3_1/src/make.include] Error 2
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+cp: cannot create regular file ‘../../../include/xiicps.h’: Permission denied
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_7/src
+cp: cannot create regular file ‘../../../include/xiicps_hw.h’: Permission denied
+make -C ps7_cortexa9_0/libsrc/sdps_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+make[1]: *** [xiicps_includes] Error 1
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_4/src
+make[1]: Target `include' not remade because of errors.
+make -C ps7_cortexa9_0/libsrc/standalone_v5_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+make: *** [ps7_cortexa9_0/libsrc/iicps_v3_1/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xqspips.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xqspips_hw.h’: Permission denied
+make[1]: *** [xqspips_includes] Error 1
+make[1]: Target `include' not remade because of errors.
+make: *** [ps7_cortexa9_0/libsrc/qspips_v3_3/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xscugic.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xscugic_hw.h’: Permission denied
+make[1]: *** [scugic_includes] Error 1
+make[1]: Target `include' not remade because of errors.
+make: *** [ps7_cortexa9_0/libsrc/scugic_v3_2/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xscutimer.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xscutimer_hw.h’: Permission denied
+make[1]: *** [scutimer_includes] Error 1
+make[1]: Target `include' not remade because of errors.
+make: *** [ps7_cortexa9_0/libsrc/scutimer_v2_1/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xscuwdt.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xscuwdt_hw.h’: Permission denied
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_1/src
+make[1]: *** [scuwdt_includes] Error 1
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+make[1]: Target `include' not remade because of errors.
+make: *** [ps7_cortexa9_0/libsrc/scuwdt_v2_1/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xsdps.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xsdps_hw.h’: Permission denied
+make[1]: *** [xsdps_includes] Error 1
+make[1]: Target `include' not remade because of errors.
+make: *** [ps7_cortexa9_0/libsrc/sdps_v2_7/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/bspconfig.h’: Permission denied
+cp: cannot create regular file ‘../../../include/sleep.h’: Permission denied
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src
+cp: cannot create regular file ‘../../../include/smc.h’: Permission denied
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+cp: cannot create regular file ‘../../../include/vectors.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xbasic_types.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xdebug.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xenv.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xenv_standalone.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_assert.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_cache.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_cache_l.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_cache_vxworks.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_errata.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_exception.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_hal.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_io.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_macroback.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_misc_psreset_api.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_mmu.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_printf.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_testcache.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_testio.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_testmem.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_types.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xl2cc.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xl2cc_counter.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xparameters_ps.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xplatform_info.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xpm_counter.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xpseudo_asm.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xpseudo_asm_gcc.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xreg_cortexa9.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xstatus.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xtime_l.h’: Permission denied
+make[1]: *** [standalone_includes] Error 1
+cp: cannot create regular file ‘../../../../include/profile.h’: Permission denied
+cp: cannot create regular file ‘../../../../include/mblaze_nt_types.h’: Permission denied
+cp: cannot create regular file ‘../../../../include/_profile_timer_hw.h’: Permission denied
+make[2]: *** [include] Error 1
+make[1]: *** [profile_includes] Error 2
+make[1]: Target `include' not remade because of errors.
+make: *** [ps7_cortexa9_0/libsrc/standalone_v5_4/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xttcps.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xttcps_hw.h’: Permission denied
+make[1]: *** [ttcps_includes] Error 1
+make[1]: Target `include' not remade because of errors.
+make: *** [ps7_cortexa9_0/libsrc/ttcps_v3_1/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xuartps.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xuartps_hw.h’: Permission denied
+make[1]: *** [xuartps_includes] Error 1
+make[1]: Target `include' not remade because of errors.
+make: *** [ps7_cortexa9_0/libsrc/uartps_v3_1/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xusbps.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xusbps_endpoint.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xusbps_hw.h’: Permission denied
+make[1]: *** [xusbps_includes] Error 1
+make[1]: Target `include' not remade because of errors.
+make: *** [ps7_cortexa9_0/libsrc/usbps_v2_3/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xadcps.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xadcps_hw.h’: Permission denied
+make[1]: *** [xadcps_includes] Error 1
+make[1]: Target `include' not remade because of errors.
+make: *** [ps7_cortexa9_0/libsrc/xadcps_v2_2/src/make.include] Error 2
+make: Target `all' not remade because of errors.
+
+15:35:23 Build Finished (took 595ms)
+

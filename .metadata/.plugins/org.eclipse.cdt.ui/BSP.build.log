@@ -1,0 +1,88 @@
+15:35:18 **** Build of project BSP ****
+make -k all 
+Running Make include in microblaze_0/libsrc/bram_v4_1/src
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+cp: cannot create regular file ‘../../../include/xbram.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xbram_hw.h’: Permission denied
+Running Make include in microblaze_0/libsrc/cpu_v2_4/src
+make[1]: *** [include] Error 1
+make -C microblaze_0/libsrc/cpu_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+make: *** [microblaze_0/libsrc/bram_v4_1/src/make.include] Error 2
+Running Make include in microblaze_0/libsrc/emaclite_v4_2/src
+cp: cannot create regular file ‘../../../include/xio.h’: Permission denied
+make -C microblaze_0/libsrc/emaclite_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+make[1]: *** [include] Error 1
+make: *** [microblaze_0/libsrc/cpu_v2_4/src/make.include] Error 2
+Running Make include in microblaze_0/libsrc/gpio_v4_1/src
+cp: cannot create regular file ‘../../../include/xemaclite.h’: Permission denied
+make -C microblaze_0/libsrc/gpio_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+cp: cannot create regular file ‘../../../include/xemaclite_i.h’: Permission denied
+Running Make include in microblaze_0/libsrc/intc_v3_5/src
+cp: cannot create regular file ‘../../../include/xemaclite_l.h’: Permission denied
+make -C microblaze_0/libsrc/intc_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+make[1]: *** [include] Error 1
+Running Make include in microblaze_0/libsrc/standalone_v5_4/src
+make: *** [microblaze_0/libsrc/emaclite_v4_2/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xgpio_l.h’: Permission denied
+make -C microblaze_0/libsrc/standalone_v5_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+cp: cannot create regular file ‘../../../include/xgpio.h’: Permission denied
+Running Make include in microblaze_0/libsrc/tmrctr_v4_1/src
+make[1]: *** [include] Error 1
+make -C microblaze_0/libsrc/tmrctr_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+make: *** [microblaze_0/libsrc/gpio_v4_1/src/make.include] Error 2
+Running Make include in microblaze_0/libsrc/uartlite_v3_2/src
+cp: cannot create regular file ‘../../../include/xintc.h’: Permission denied
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+cp: cannot create regular file ‘../../../include/xintc_i.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xintc_l.h’: Permission denied
+make[1]: *** [include] Error 1
+make: *** [microblaze_0/libsrc/intc_v3_5/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/bspconfig.h’: Permission denied
+cp: cannot create regular file ‘../../../include/fsl.h’: Permission denied
+cp: cannot create regular file ‘../../../include/mb_interface.h’: Permission denied
+cp: cannot create regular file ‘../../../include/microblaze_exceptions_g.h’: Permission denied
+cp: cannot create regular file ‘../../../include/microblaze_exceptions_i.h’: Permission denied
+cp: cannot create regular file ‘../../../include/microblaze_interrupts_i.h’: Permission denied
+cp: cannot create regular file ‘../../../include/microblaze_sleep.h’: Permission denied
+cp: cannot create regular file ‘../../../include/pvr.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xbasic_types.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xdebug.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xenv.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xenv_standalone.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_assert.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_cache.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_cache_vxworks.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_exception.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_hal.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_io.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_macroback.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_misc_psreset_api.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_printf.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_testcache.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_testio.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_testmem.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xil_types.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xplatform_info.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xstatus.h’: Permission denied
+make[1]: *** [standalone_includes] Error 1
+cp: cannot create regular file ‘../../../../include/profile.h’: Permission denied
+cp: cannot create regular file ‘../../../../include/mblaze_nt_types.h’: Permission denied
+cp: cannot create regular file ‘../../../../include/_profile_timer_hw.h’: Permission denied
+make[2]: *** [include] Error 1
+make[1]: *** [profile_includes] Error 2
+make[1]: Target `include' not remade because of errors.
+make: *** [microblaze_0/libsrc/standalone_v5_4/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xtmrctr.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xtmrctr_i.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xtmrctr_l.h’: Permission denied
+make[1]: *** [include] Error 1
+make: *** [microblaze_0/libsrc/tmrctr_v4_1/src/make.include] Error 2
+cp: cannot create regular file ‘../../../include/xuartlite.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xuartlite_i.h’: Permission denied
+cp: cannot create regular file ‘../../../include/xuartlite_l.h’: Permission denied
+make[1]: *** [include] Error 1
+make: *** [microblaze_0/libsrc/uartlite_v3_2/src/make.include] Error 2
+make: Target `all' not remade because of errors.
+
+15:35:19 Build Finished (took 337ms)
+

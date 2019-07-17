@@ -1,0 +1,14 @@
+1------------22------------5
+|............||............|
+|.1--5.1---5.||.1---5.1--5.|
+|.|  |.|   |.||.|   |.|  |.|
+|.4--6.4---6.33.4---6.4--6.|
+|..........................|
+
+xQueueSend(ghostRedToMulti, &ghostRed, 0);
+
+
+			
+				unsigned char playMode = multiMode;
+			//			xQueueReceive(playingModeQueue, &playMode,0);
+//			if(playMode == multiMode) sendStatus(pacmanStats);

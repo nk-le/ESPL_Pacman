@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Demo@khanh_workspace</name>
+	<comment></comment>
+	<projects></projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.make.core.makeBuilder</name>
+			<triggers>clean,full,incremental,</triggers>
+			<arguments>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.cleanBuildTarget</key>
+					<value>clean</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableCleanBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.append_environment</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.stopOnError</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enabledIncrementalBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.command</key>
+					<value>/usr/local/bin/gmake</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.contents</key>
+					<value>org.eclipse.cdt.make.core.activeConfigSettings</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.inc</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.arguments</key>
+					<value>-j8</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.buildLocation</key>
+					<value>/DIST/home/lab_espl_stud10/khanh_workspace</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.useDefaultBuildCmd</key>
+					<value>false</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.environment</key>
+					<value>VERBOSE=1|CMAKE_NO_VERBOSE=1|</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableFullBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.auto</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableAutoBuild</key>
+					<value>false</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.clean</key>
+					<value>clean</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.fullBuildTarget</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.buildArguments</key>
+					<value></value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.location</key>
+					<value>/DIST/home/lab_espl_stud10/khanh_workspace</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.autoBuildTarget</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.core.errorOutputParser</key>
+					<value>org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser;</value>
+				</dictionary>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.make.core.ScannerConfigBuilder</name>
+			<arguments/>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.make.core.makeNature</nature>
+		<nature>org.eclipse.cdt.make.core.ScannerConfigNature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>[Subprojects]</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Source Files/gfx.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/ugfx/src/gfx.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Source Files/gdriver.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/ugfx/src/gdriver/gdriver.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Source Files/gdisp_fonts.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/ugfx/src/gdisp/gdisp_fonts.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Source Files/gdisp.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/ugfx/src/gdisp/gdisp.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Source Files/mf_encoding.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/ugfx/src/gdisp/mcufont/mf_encoding.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Source Files/mf_font.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/ugfx/src/gdisp/mcufont/mf_font.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Source Files/mf_justify.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/ugfx/src/gdisp/mcufont/mf_justify.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Source Files/mf_scaledfont.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/ugfx/src/gdisp/mcufont/mf_scaledfont.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Source Files/mf_rlefont.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/ugfx/src/gdisp/mcufont/mf_rlefont.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Source Files/gevent.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/ugfx/src/gevent/gevent.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Source Files/ginput.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/ugfx/src/ginput/ginput.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Source Files/ginput_mouse.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/ugfx/src/ginput/ginput_mouse.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Source Files/gos_freertos.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/ugfx/src/gos/gos_freertos.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Source Files/gtimer.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/ugfx/src/gtimer/gtimer.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Source Files/gwin_console.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/ugfx/src/gwin/gwin_console.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Source Files/gwin.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/ugfx/src/gwin/gwin.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Source Files/gwin_wm.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/ugfx/src/gwin/gwin_wm.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Source Files/gdisp_image.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/ugfx/src/gdisp/gdisp_image.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Source Files/gdisp_image_bmp.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/ugfx/src/gdisp/gdisp_image_bmp.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Source Files/gfile.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/ugfx/src/gfile/gfile.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Source Files/gfile_fs_rom.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/ugfx/src/gfile/gfile_fs_rom.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ugfxlib/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib//startup_stm32f429_439xx.S</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/usr/startup_stm32f429_439xx.S</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Source Files/Button.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/code/Button.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Source Files/Demo.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/code/Demo.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Source Files/Map.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/code/Map.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Source Files/StateMachine.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/code/StateMachine.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Source Files/display.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/code/display.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Source Files/ghostBlue.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/code/ghostBlue.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Source Files/ghostMulti.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/code/ghostMulti.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Source Files/ghostMultiReceive.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/code/ghostMultiReceive.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Source Files/ghostOrange.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/code/ghostOrange.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Source Files/ghostPink.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/code/ghostPink.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Source Files/ghostRed.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/code/ghostRed.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Source Files/pac_man.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/code/pac_man.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Source Files/pacmanMulti.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/code/pacmanMulti.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Source Files/gdisp_lld_ILI9341.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/usr/gdisp_lld_ILI9341.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Source Files/ginput_lld_mouse.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/usr/ginput_lld_mouse.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Source Files/ParTest.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/usr/ParTest.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Source Files/port.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/usr/port.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Source Files/timertest.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/usr/timertest.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Source Files/system_stm32f4xx.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/usr/system_stm32f4xx.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Source Files/ESPL_functions.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/usr/ESPL_functions.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] usrlib/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmutilitieslib</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmutilitieslib/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmutilitieslib/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmutilitieslib/Source Files/stm32f429i_discovery_ioe.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/STM32F4/Utilities/STM32_EVAL/STM32F429I-Discovery/stm32f429i_discovery_ioe.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmutilitieslib/Source Files/stm32f429i_discovery_lcd.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/STM32F4/Utilities/STM32_EVAL/STM32F429I-Discovery/stm32f429i_discovery_lcd.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmutilitieslib/Source Files/stm32f429i_discovery_sdram.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/STM32F4/Utilities/STM32_EVAL/STM32F429I-Discovery/stm32f429i_discovery_sdram.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmutilitieslib/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmutilitieslib/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmutilitieslib/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmutilitieslib/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] rtoslib</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] rtoslib/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] rtoslib/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] rtoslib/Source Files/list.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/FreeRTOS/FreeRTOS/Source/list.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] rtoslib/Source Files/queue.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/FreeRTOS/FreeRTOS/Source/queue.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] rtoslib/Source Files/tasks.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/FreeRTOS/FreeRTOS/Source/tasks.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] rtoslib/Source Files/timers.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/FreeRTOS/FreeRTOS/Source/timers.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] rtoslib/Source Files/heap_1.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_1.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] rtoslib/Source Files/flash.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/FreeRTOS/FreeRTOS/Demo/Common/Minimal/flash.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] rtoslib/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] rtoslib/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] rtoslib/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] rtoslib/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/Button.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/usrlib.dir/code/Button.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/Demo.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/usrlib.dir/code/Demo.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/Map.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/usrlib.dir/code/Map.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/StateMachine.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/usrlib.dir/code/StateMachine.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/display.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/usrlib.dir/code/display.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/ghostBlue.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/usrlib.dir/code/ghostBlue.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/ghostMulti.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/usrlib.dir/code/ghostMulti.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/ghostMultiReceive.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/usrlib.dir/code/ghostMultiReceive.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/ghostOrange.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/usrlib.dir/code/ghostOrange.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/ghostPink.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/usrlib.dir/code/ghostPink.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/ghostRed.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/usrlib.dir/code/ghostRed.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/pac_man.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/usrlib.dir/code/pac_man.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/pacmanMulti.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/usrlib.dir/code/pacmanMulti.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/gdisp_lld_ILI9341.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/usrlib.dir/Libraries/usr/gdisp_lld_ILI9341.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/ginput_lld_mouse.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/usrlib.dir/Libraries/usr/ginput_lld_mouse.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/ParTest.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/usrlib.dir/Libraries/usr/ParTest.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/port.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/usrlib.dir/Libraries/usr/port.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/timertest.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/usrlib.dir/Libraries/usr/timertest.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/system_stm32f4xx.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/usrlib.dir/Libraries/usr/system_stm32f4xx.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/ESPL_functions.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/usrlib.dir/Libraries/usr/ESPL_functions.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/startup_stm32f429_439xx.S.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/usrlib.dir/Libraries/usr/startup_stm32f429_439xx.S.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/list.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/rtoslib.dir/Libraries/FreeRTOS/FreeRTOS/Source/list.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/queue.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/rtoslib.dir/Libraries/FreeRTOS/FreeRTOS/Source/queue.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/tasks.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/rtoslib.dir/Libraries/FreeRTOS/FreeRTOS/Source/tasks.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/timers.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/rtoslib.dir/Libraries/FreeRTOS/FreeRTOS/Source/timers.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/heap_1.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/rtoslib.dir/Libraries/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_1.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/flash.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/rtoslib.dir/Libraries/FreeRTOS/FreeRTOS/Demo/Common/Minimal/flash.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/misc.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/stmperipheralslib.dir/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/misc.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/stm32f4xx_dma.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/stmperipheralslib.dir/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/stm32f4xx_dma2d.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/stmperipheralslib.dir/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma2d.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/stm32f4xx_fmc.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/stmperipheralslib.dir/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fmc.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/stm32f4xx_i2c.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/stmperipheralslib.dir/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/stm32f4xx_ltdc.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/stmperipheralslib.dir/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_ltdc.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/stm32f4xx_gpio.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/stmperipheralslib.dir/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/stm32f4xx_rcc.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/stmperipheralslib.dir/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/stm32f4xx_spi.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/stmperipheralslib.dir/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/stm32f4xx_usart.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/stmperipheralslib.dir/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/stm32f4xx_adc.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/stmperipheralslib.dir/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_adc.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/stm32f4xx_tim.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/stmperipheralslib.dir/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/stm32f4xx_exti.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/stmperipheralslib.dir/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/stm32f4xx_syscfg.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/stmperipheralslib.dir/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/stm32f429i_discovery_ioe.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/stmutilitieslib.dir/Libraries/STM32F4/Utilities/STM32_EVAL/STM32F429I-Discovery/stm32f429i_discovery_ioe.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/stm32f429i_discovery_lcd.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/stmutilitieslib.dir/Libraries/STM32F4/Utilities/STM32_EVAL/STM32F429I-Discovery/stm32f429i_discovery_lcd.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/stm32f429i_discovery_sdram.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/stmutilitieslib.dir/Libraries/STM32F4/Utilities/STM32_EVAL/STM32F429I-Discovery/stm32f429i_discovery_sdram.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/gfx.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/ugfxlib.dir/Libraries/ugfx/src/gfx.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/gdriver.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/ugfxlib.dir/Libraries/ugfx/src/gdriver/gdriver.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/gdisp_fonts.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/ugfxlib.dir/Libraries/ugfx/src/gdisp/gdisp_fonts.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/gdisp.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/ugfxlib.dir/Libraries/ugfx/src/gdisp/gdisp.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/mf_encoding.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/ugfxlib.dir/Libraries/ugfx/src/gdisp/mcufont/mf_encoding.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/mf_font.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/ugfxlib.dir/Libraries/ugfx/src/gdisp/mcufont/mf_font.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/mf_justify.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/ugfxlib.dir/Libraries/ugfx/src/gdisp/mcufont/mf_justify.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/mf_scaledfont.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/ugfxlib.dir/Libraries/ugfx/src/gdisp/mcufont/mf_scaledfont.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/mf_rlefont.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/ugfxlib.dir/Libraries/ugfx/src/gdisp/mcufont/mf_rlefont.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/gevent.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/ugfxlib.dir/Libraries/ugfx/src/gevent/gevent.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/ginput.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/ugfxlib.dir/Libraries/ugfx/src/ginput/ginput.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/ginput_mouse.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/ugfxlib.dir/Libraries/ugfx/src/ginput/ginput_mouse.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/gos_freertos.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/ugfxlib.dir/Libraries/ugfx/src/gos/gos_freertos.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/gtimer.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/ugfxlib.dir/Libraries/ugfx/src/gtimer/gtimer.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/gwin_console.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/ugfxlib.dir/Libraries/ugfx/src/gwin/gwin_console.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/gwin.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/ugfxlib.dir/Libraries/ugfx/src/gwin/gwin.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/gwin_wm.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/ugfxlib.dir/Libraries/ugfx/src/gwin/gwin_wm.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/gdisp_image.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/ugfxlib.dir/Libraries/ugfx/src/gdisp/gdisp_image.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/gdisp_image_bmp.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/ugfxlib.dir/Libraries/ugfx/src/gdisp/gdisp_image_bmp.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/gfile.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/ugfxlib.dir/Libraries/ugfx/src/gfile/gfile.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] Demo.elf/Object Files/gfile_fs_rom.c.o</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/CMakeFiles/ugfxlib.dir/Libraries/ugfx/src/gfile/gfile_fs_rom.c.o</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmperipheralslib</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmperipheralslib/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmperipheralslib/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmperipheralslib/Source Files/misc.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/misc.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmperipheralslib/Source Files/stm32f4xx_dma.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmperipheralslib/Source Files/stm32f4xx_dma2d.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma2d.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmperipheralslib/Source Files/stm32f4xx_fmc.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fmc.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmperipheralslib/Source Files/stm32f4xx_i2c.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmperipheralslib/Source Files/stm32f4xx_ltdc.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_ltdc.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmperipheralslib/Source Files/stm32f4xx_gpio.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmperipheralslib/Source Files/stm32f4xx_rcc.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmperipheralslib/Source Files/stm32f4xx_spi.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmperipheralslib/Source Files/stm32f4xx_usart.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmperipheralslib/Source Files/stm32f4xx_adc.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_adc.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmperipheralslib/Source Files/stm32f4xx_tim.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmperipheralslib/Source Files/stm32f4xx_exti.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmperipheralslib/Source Files/stm32f4xx_syscfg.c</name>
+			<type>1</type>
+			<location>/DIST/home/lab_espl_stud10/khanh_workspace/Libraries/STM32F4/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmperipheralslib/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmperipheralslib/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmperipheralslib/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] stmperipheralslib/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

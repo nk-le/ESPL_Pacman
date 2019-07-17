@@ -1,0 +1,590 @@
+if(pacmanPosition.status == 1) fright = 1;
+					else if(pacmanPosition.status == 0) fright = 0;
+
+					// CHECK COLLISION
+					if(pacmanPosition.x == 250)
+					{
+						ghostBlue.x = 172;
+						ghostBlue.y = 36;
+						eaten = 0;
+					}
+					// Return back, ghost kills Pacman
+					else if(!eaten && abs(ghostBlue.x - pacmanPosition.x) < 2 && abs(ghostBlue.y - pacmanPosition.y) < 2 && pacmanPosition.status == 0){
+						//ghostBlue.x = 52;
+						//ghostBlue.y = 36;
+						collisionStatus  = 1;
+						xQueueSend(collisionQueue, &collisionStatus, 100);
+					}
+					// ghost is killed by pacman
+					else if(!eaten && abs(ghostBlue.x - pacmanPosition.x) <=4 && abs(ghostBlue.y - pacmanPosition.y) <=4 && pacmanPosition.status == 1){
+						//Draw an eye
+						pacmanPosition.x = 108;
+						pacmanPosition.y = 84;
+						collisionStatus  = 2;
+						ghostBlue.speed = 1;
+						eaten = 1;
+						xQueueSend(collisionQueue, &collisionStatus, 100);
+					}else if(eaten){
+						pacmanPosition.x = 108;
+						pacmanPosition.y = 84;
+					}
+// GHOST Blue: CHASER ****************************************************************************************************************
+				//ghost started locked inside the center box
+
+					if(pacmanPosition.status == 1) fright = 1;
+					else if(pacmanPosition.status == 0) fright = 0;
+
+					// CHECK COLLISION
+					if(pacmanPosition.x == 250)
+					{
+						ghostBlue.x = 172;
+						ghostBlue.y = 36;
+						eaten = 0;
+					}
+					// Return back, ghost kills Pacman
+					else if(!eaten && abs(ghostBlue.x - pacmanPosition.x) < 2 && abs(ghostBlue.y - pacmanPosition.y) < 2 && pacmanPosition.status == 0){
+						//ghostBlue.x = 52;
+						//ghostBlue.y = 36;
+						collisionStatus  = 1;
+						xQueueSend(collisionQueue, &collisionStatus, 100);
+					}
+					// ghost is killed by pacman
+					else if(!eaten && abs(ghostBlue.x - pacmanPosition.x) <=4 && abs(ghostBlue.y - pacmanPosition.y) <=4 && pacmanPosition.status == 1){
+						//Draw an eye
+						pacmanPosition.x = 108;
+						pacmanPosition.y = 84;
+						collisionStatus  = 2;
+						ghostBlue.speed = 1;
+						eaten = 1;
+						xQueueSend(collisionQueue, &collisionStatus, 100);
+					}else if(eaten){
+						pacmanPosition.x = 108;
+						pacmanPosition.y = 84;
+					}
+
+					// CALCULATION OF DISTANCES
+					up = pow((double) (ghostBlue.y - 4) - pacmanPosition.y, 2) + pow((double) ghostBlue.x - pacmanPosition.x, 2);
+					down = pow((double) (ghostBlue.y + 4) - pacmanPosition.y, 2) + pow((double) ghostBlue.x - pacmanPosition.x, 2);
+					right = pow((double) (ghostBlue.x + 4) - pacmanPosition.x, 2) + pow((double) ghostBlue.y - pacmanPosition.y, 2);
+					left = pow((double) (ghostBlue.x - 4) - pacmanPosition.x, 2) + pow((double) ghostBlue.y - pacmanPosition.y, 2);
+					double distanceArray[4] = {left,right,up,down};
+
+					//action when ghost is not frightened
+					if(!fright || eaten){
+						//Compare distance of different direction and find index of shortest path
+						for(int i=0;i<4;i++){
+							//initialize the index of shortest path to 0
+							if(i==0){
+								minIndex=0;
+							}
+							//if the direction is impossible, increase the distance so the index will not be chosen
+							if(!checkMovementGhost(ghostBlue.x,ghostBlue.y,i) || i==oppositeDirection){
+								distanceArray[i]+=3000;
+							}else if(distanceArray[i] < distanceArray[minIndex]){
+								//if current path is the shortest and also possible
+								//mark the index to i
+								minIndex = i;
+							}// GHOST Blue: CHASER ****************************************************************************************************************
+				//ghost started locked inside the center box
+
+					if(pacmanPosition.status == 1) fright = 1;
+					else if(pacmanPosition.status == 0) fright = 0;
+
+					// CHECK COLLISION
+					if(pacmanPosition.x == 250)
+					{
+						ghostBlue.x = 172;
+						ghostBlue.y = 36;
+						eaten = 0;
+					}
+					// Return back, ghost kills Pacman
+					else if(!eaten && abs(ghostBlue.x - pacmanPosition.x) < 2 && abs(ghostBlue.y - pacmanPosition.y) < 2 && pacmanPosition.status == 0){
+						//ghostBlue.x = 52;
+						//ghostBlue.y = 36;
+						collisionStatus  = 1;
+						xQueueSend(collisionQueue, &collisionStatus, 100);
+					}
+					// ghost is killed by pacman
+					else if(!eaten && abs(ghostBlue.x - pacmanPosition.x) <=4 && abs(ghostBlue.y - pacmanPosition.y) <=4 && pacmanPosition.status == 1){
+						//Draw an eye
+						pacmanPosition.x = 108;
+						pacmanPosition.y = 84;
+						collisionStatus  = 2;
+						ghostBlue.speed = 1;
+						eaten = 1;
+						xQueueSend(collisionQueue, &collisionStatus, 100);
+					}else if(eaten){
+						pacmanPosition.x = 108;
+						pacmanPosition.y = 84;
+					}
+
+					// CALCULATION OF DISTANCES
+					up = pow((double) (ghostBlue.y - 4) - pacmanPosition.y, 2) + pow((double) ghostBlue.x - pacmanPosition.x, 2);
+					down = pow((double) (ghostBlue.y + 4) - pacmanPosition.y, 2) + pow((double) ghostBlue.x - pacmanPosition.x, 2);
+					right = pow((double) (ghostBlue.x + 4) - pacmanPosition.x, 2) + pow((double) ghostBlue.y - pacmanPosition.y, 2);
+					left = pow((double) (ghostBlue.x - 4) - pacmanPosition.x, 2) + pow((double) ghostBlue.y - pacmanPosition.y, 2);
+					double distanceArray[4] = {left,right,up,down};
+
+					//action when ghost is not frightened
+					if(!fright || eaten){
+						//Compare distance of different direction and find index of shortest path
+						for(int i=0;i<4;i++){
+							//initialize the index of shortest path to 0
+							if(i==0){
+								minIndex=0;
+							}
+							//if the direction is impossible, increase the distance so the index will not be chosen
+							if(!checkMovementGhost(ghostBlue.x,ghostBlue.y,i) || i==oppositeDirection){
+								distanceArray[i]+=3000;
+							}else if(distanceArray[i] < distanceArray[minIndex]){
+								//if current path is the shortest and also possible
+								//mark the index to i
+								minIndex = i;
+							}
+
+						}
+
+						//make movement decision based on index of shortest path
+						switch(minIndex){
+							case GO_RIGHT:
+									oppositeDirection = GO_LEFT;
+									ghostBlue.x += ghostBlue.speed;
+									if(ghostBlue.x>=224) ghostBlue.x=0;
+									if(eaten)gdispImageDraw(&EYE_RIGHT,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+									else gdispImageDraw(&BLUE_RIGHT,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+								break;
+							case GO_LEFT:
+									oppositeDirection = GO_RIGHT;
+									ghostBlue.x -= ghostBlue.speed;
+									if(ghostBlue.x<=0) ghostBlue.x=224;
+									if(eaten)gdispImageDraw(&EYE_LEFT,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+									else gdispImageDraw(&BLUE_LEFT,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+								break;
+							case GO_UP:
+									oppositeDirection = GO_DOWN;
+									ghostBlue.y -= ghostBlue.speed;
+									if(eaten)gdispImageDraw(&EYE_UP,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+									else gdispImageDraw(&BLUE_UP,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+								break;
+							case GO_DOWN:
+									oppositeDirection = GO_UP;
+									ghostBlue.y += ghostBlue.speed;
+									if(eaten)gdispImageDraw(&EYE_DOWN,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+									else gdispImageDraw(&BLUE_DOWN,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+								break;
+							default:
+								break;
+						}
+
+					}else{//action when ghost is frightened
+						//Compare distance of different direction a// GHOST Blue: CHASER ****************************************************************************************************************
+				//ghost started locked inside the center box
+
+					if(pacmanPosition.status == 1) fright = 1;
+					else if(pacmanPosition.status == 0) fright = 0;
+
+					// CHECK COLLISION
+					if(pacmanPosition.x == 250)
+					{
+						ghostBlue.x = 172;
+						ghostBlue.y = 36;
+						eaten = 0;
+					}
+					// Return back, ghost kills Pacman
+					else if(!eaten && abs(ghostBlue.x - pacmanPosition.x) < 2 && abs(ghostBlue.y - pacmanPosition.y) < 2 && pacmanPosition.status == 0){
+						//ghostBlue.x = 52;
+						//ghostBlue.y = 36;
+						collisionStatus  = 1;
+						xQueueSend(collisionQueue, &collisionStatus, 100);
+					}
+					// ghost is killed by pacman
+					else if(!eaten && abs(ghostBlue.x - pacmanPosition.x) <=4 && abs(ghostBlue.y - pacmanPosition.y) <=4 && pacmanPosition.status == 1){
+						//Draw an eye
+						pacmanPosition.x = 108;
+						pacmanPosition.y = 84;
+						collisionStatus  = 2;
+						ghostBlue.speed = 1;
+						eaten = 1;
+						xQueueSend(collisionQueue, &collisionStatus, 100);
+					}else if(eaten){
+						pacmanPosition.x = 108;
+						pacmanPosition.y = 84;
+					}
+
+					// CALCULATION OF DISTANCES
+					up = pow((double) (ghostBlue.y - 4) - pacmanPosition.y, 2) + pow((double) ghostBlue.x - pacmanPosition.x, 2);
+					down = pow((double) (ghostBlue.y + 4) - pacmanPosition.y, 2) + pow((double) ghostBlue.x - pacmanPosition.x, 2);
+					right = pow((double) (ghostBlue.x + 4) - pacmanPosition.x, 2) + pow((double) ghostBlue.y - pacmanPosition.y, 2);
+					left = pow((double) (ghostBlue.x - 4) - pacmanPosition.x, 2) + pow((double) ghostBlue.y - pacmanPosition.y, 2);
+					double distanceArray[4] = {left,right,up,down};
+
+					//action when ghost is not frightened
+					if(!fright || eaten){
+						//Compare distance of different direction and find index of shortest path
+						for(int i=0;i<4;i++){
+							//initialize the index of shortest path to 0
+							if(i==0){
+								minIndex=0;
+							}
+							//if the direction is impossible, increase the distance so the index will not be chosen
+							if(!checkMovementGhost(ghostBlue.x,ghostBlue.y,i) || i==oppositeDirection){
+								distanceArray[i]+=3000;
+							}else if(distanceArray[i] < distanceArray[minIndex]){
+								//if current path is the shortest and also possible
+								//mark the index to i
+								minIndex = i;
+							}
+
+						}
+
+						//make movement decision based on index of shortest path
+						switch(minIndex){
+							case GO_RIGHT:
+									oppositeDirection = GO_LEFT;
+									ghostBlue.x += ghostBlue.speed;
+									if(ghostBlue.x>=224) ghostBlue.x=0;
+									if(eaten)gdispImageDraw(&EYE_RIGHT,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+									else gdispImageDraw(&BLUE_RIGHT,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+								break;
+							case GO_LEFT:
+									oppositeDirection = GO_RIGHT;
+									ghostBlue.x -= ghostBlue.speed;
+									if(ghostBlue.x<=0) ghostBlue.x=224;
+									if(eaten)gdispImageDraw(&EYE_LEFT,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+									else gdispImageDraw(&BLUE_LEFT,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+								break;
+							case GO_UP:
+									oppositeDirection = GO_DOWN;
+									ghostBlue.y -= ghostBlue.speed;
+									if(eaten)gdispImageDraw(&EYE_UP,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+									else gdispImageDraw(&BLUE_UP,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+								break;
+							case GO_DOWN:
+									oppositeDirection = GO_UP;
+									ghostBlue.y += ghostBlue.speed;
+									if(eaten)gdispImageDraw(&EYE_DOWN,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+									else gdispImageDraw(&BLUE_DOWN,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+								break;
+							default:
+								break;
+						}
+
+					}else{//action when ghost is frightened
+						//Compare distance of different direction and find index of longest path
+						for(int i=0;i<4;i++){
+							//initialize the index of longest path to 0
+							if(i==0){
+								maxIndex=i;
+							}
+							//if the direction is impossible, decrease the distance so the index will not be chosen
+							if(!checkMovementGhost(ghostBlue.x,ghostBlue.y,i) || i==oppositeFleeDirection){
+								distanceArray[i]=0;
+							}else if(distanceArray[i] > distanceArray[maxIndex]){
+								//if current path is the longest and also possible
+								//mark the index to i
+								maxIndex = i;
+							}
+
+						}
+
+						//make movement decision based on index of shortest path
+						switch(maxIndex){
+							case GO_RIGHT:
+									oppositeFleeDirection = GO_LEFT;
+									ghostBlue.x += ghostBlue.speed;
+									if(ghostBlue.y == 108 && ghostBlue.x>=224) ghostBlue.x=0;
+								break;
+							case GO_LEFT:
+									oppositeFleeDirection = GO_RIGHT;
+									ghostBlue.x -= ghostBlue.speed;
+									if(ghostBlue.y == 108 && ghostBlue.x<=0) ghostBlue.x=224;
+								break;
+							case GO_UP:
+									oppositeFleeDirection = GO_DOWN;
+									ghostBlue.y -= ghostBlue.speed;
+								break;
+							case GO_DOWN:
+									oppositeFleeDirection = GO_UP;
+									ghostBlue.y += ghostBlue.speed;
+								break;
+							default:
+								break;
+						}
+
+						gdispImageDraw(&BLUE_FRIGHTENED,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+
+					}
+
+					//go back to original state
+					if(ghostBlue.x == 108 && ghostBlue.y == 84) {
+						eaten = 0;
+						ghostBlue.speed = 1;
+					}
+
+
+
+		// GHOST Blue: END ****************************************************************************************************************
+			//vTaskDelayUntil(&xLastWakeTime, Tick);
+		}nd find index of longest path
+						for(int i=0;i<4;i++){
+							//initialize the index of longest path to 0
+							if(i==0){
+								maxIndex=i;
+							}
+							//if the direction is impossible, decrease the distance so the index will not be chosen
+							if(!checkMovementGhost(ghostBlue.x,ghostBlue.y,i) || i==oppositeFleeDirection){
+								distanceArray[i]=0;
+							}else if(distanceArray[i] > distanceArray[maxIndex]){
+								//if current path is the longest and also possible
+								//mark the index to i
+								maxIndex = i;
+							}
+
+						}
+
+						//make movement decision based on index of shortest path
+						switch(maxIndex){
+							case GO_RIGHT:
+									oppositeFleeDirection = GO_LEFT;
+									ghostBlue.x += ghostBlue.speed;
+									if(ghostBlue.y == 108 && ghostBlue.x>=224) ghostBlue.x=0;
+								break;
+							case GO_LEFT:
+									oppositeFleeDirection = GO_RIGHT;
+									ghostBlue.x -= ghostBlue.speed;
+									if(ghostBlue.y == 108 && ghostBlue.x<=0) ghostBlue.x=224;
+								break;
+							case GO_UP:
+									oppositeFleeDirection = GO_DOWN;
+									ghostBlue.y -= ghostBlue.speed;
+								break;
+							case GO_DOWN:
+									oppositeFleeDirection = GO_UP;
+									ghostBlue.y += ghostBlue.speed;
+								break;
+							default:
+								break;
+						}
+
+						gdispImageDraw(&BLUE_FRIGHTENED,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+
+					}
+
+					//go back to original state
+					if(ghostBlue.x == 108 && ghostBlue.y == 84) {
+						eaten = 0;
+						ghostBlue.speed = 1;
+					}
+
+
+
+		// GHOST Blue: END ****************************************************************************************************************
+			//vTaskDelayUntil(&xLastWakeTime, Tick);
+		}
+
+						}
+
+						//make movement decision based on index of shortest path
+						switch(minIndex){
+							case GO_RIGHT:
+									oppositeDirection = GO_LEFT;
+									ghostBlue.x += ghostBlue.speed;
+									if(ghostBlue.x>=224) ghostBlue.x=0;
+									if(eaten)gdispImageDraw(&EYE_RIGHT,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+									else gdispImageDraw(&BLUE_RIGHT,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+								break;
+							case GO_LEFT:
+									oppositeDirection = GO_RIGHT;
+									ghostBlue.x -= ghostBlue.speed;
+									if(ghostBlue.x<=0) ghostBlue.x=224;
+									if(eaten)gdispImageDraw(&EYE_LEFT,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+									else gdispImageDraw(&BLUE_LEFT,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+								break;
+							case GO_UP:
+									oppositeDirection = GO_DOWN;
+									ghostBlue.y -= ghostBlue.speed;
+									if(eaten)gdispImageDraw(&EYE_UP,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+									else gdispImageDraw(&BLUE_UP,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+								break;
+							case GO_DOWN:
+									oppositeDirection = GO_UP;
+									ghostBlue.y += ghostBlue.speed;
+									if(eaten)gdispImageDraw(&EYE_DOWN,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+									else gdispImageDraw(&BLUE_DOWN,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+								break;
+							default:
+								break;
+						}
+
+					}else{//action when ghost is frightened
+						//Compare distance of different direction and find index of longest path
+						for(int i=0;i<4;i++){
+							//initialize the index of longest path to 0
+							if(i==0){
+								maxIndex=i;
+							}
+							//if the direction is impossible, decrease the distance so the index will not be chosen
+							if(!checkMovementGhost(ghostBlue.x,ghostBlue.y,i) || i==oppositeFleeDirection){
+								distanceArray[i]=0;
+							}else if(distanceArray[i] > distanceArray[maxIndex]){
+								//if current path is the longest and also possible
+								//mark the index to i
+								maxIndex = i;
+							}
+
+						}
+
+						//make movement decision based on index of shortest path
+						switch(maxIndex){
+							case GO_RIGHT:
+									oppositeFleeDirection = GO_LEFT;
+									ghostBlue.x += ghostBlue.speed;
+									if(ghostBlue.y == 108 && ghostBlue.x>=224) ghostBlue.x=0;
+								break;
+							case GO_LEFT:
+									oppositeFleeDirection = GO_RIGHT;
+									ghostBlue.x -= ghostBlue.speed;
+									if(ghostBlue.y == 108 && ghostBlue.x<=0) ghostBlue.x=224;
+								break;
+							case GO_UP:
+									oppositeFleeDirection = GO_DOWN;
+									ghostBlue.y -= ghostBlue.speed;
+								break;
+							case GO_DOWN:
+									oppositeFleeDirection = GO_UP;
+									ghostBlue.y += ghostBlue.speed;
+								break;
+							default:
+								break;
+						}
+
+						gdispImageDraw(&BLUE_FRIGHTENED,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+
+					}
+
+					//go back to original state
+					if(ghostBlue.x == 108 && ghostBlue.y == 84) {
+						eaten = 0;
+						ghostBlue.speed = 1;
+					}
+
+
+
+		// GHOST Blue: END ****************************************************************************************************************
+			//vTaskDelayUntil(&xLastWakeTime, Tick);
+		}
+					// CALCULATION OF DISTANCES
+					up = pow((double) (ghostBlue.y - 4) - pacmanPosition.y, 2) + pow((double) ghostBlue.x - pacmanPosition.x, 2);
+					down = pow((double) (ghostBlue.y + 4) - pacmanPosition.y, 2) + pow((double) ghostBlue.x - pacmanPosition.x, 2);
+					right = pow((double) (ghostBlue.x + 4) - pacmanPosition.x, 2) + pow((double) ghostBlue.y - pacmanPosition.y, 2);
+					left = pow((double) (ghostBlue.x - 4) - pacmanPosition.x, 2) + pow((double) ghostBlue.y - pacmanPosition.y, 2);
+					double distanceArray[4] = {left,right,up,down};
+
+					//action when ghost is not frightened
+					if(!fright || eaten){
+						//Compare distance of different direction and find index of shortest path
+						for(int i=0;i<4;i++){
+							//initialize the index of shortest path to 0
+							if(i==0){
+								minIndex=0;
+							}
+							//if the direction is impossible, increase the distance so the index will not be chosen
+							if(!checkMovementGhost(ghostBlue.x,ghostBlue.y,i) || i==oppositeDirection){
+								distanceArray[i]+=3000;
+							}else if(distanceArray[i] < distanceArray[minIndex]){
+								//if current path is the shortest and also possible
+								//mark the index to i
+								minIndex = i;
+							}
+
+						}
+
+						//make movement decision based on index of shortest path
+						switch(minIndex){
+							case GO_RIGHT:
+									oppositeDirection = GO_LEFT;
+									ghostBlue.x += ghostBlue.speed;
+									if(ghostBlue.x>=224) ghostBlue.x=0;
+									if(eaten)gdispImageDraw(&EYE_RIGHT,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+									else gdispImageDraw(&BLUE_RIGHT,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+								break;
+							case GO_LEFT:
+									oppositeDirection = GO_RIGHT;
+									ghostBlue.x -= ghostBlue.speed;
+									if(ghostBlue.x<=0) ghostBlue.x=224;
+									if(eaten)gdispImageDraw(&EYE_LEFT,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+									else gdispImageDraw(&BLUE_LEFT,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+								break;
+							case GO_UP:
+									oppositeDirection = GO_DOWN;
+									ghostBlue.y -= ghostBlue.speed;
+									if(eaten)gdispImageDraw(&EYE_UP,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+									else gdispImageDraw(&BLUE_UP,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+								break;
+							case GO_DOWN:
+									oppositeDirection = GO_UP;
+									ghostBlue.y += ghostBlue.speed;
+									if(eaten)gdispImageDraw(&EYE_DOWN,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+									else gdispImageDraw(&BLUE_DOWN,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+								break;
+							default:
+								break;
+						}
+
+					}else{//action when ghost is frightened
+						//Compare distance of different direction and find index of longest path
+						for(int i=0;i<4;i++){
+							//initialize the index of longest path to 0
+							if(i==0){
+								maxIndex=i;
+							}
+							//if the direction is impossible, decrease the distance so the index will not be chosen
+							if(!checkMovementGhost(ghostBlue.x,ghostBlue.y,i) || i==oppositeFleeDirection){
+								distanceArray[i]=0;
+							}else if(distanceArray[i] > distanceArray[maxIndex]){
+								//if current path is the longest and also possible
+								//mark the index to i
+								maxIndex = i;
+							}
+
+						}
+
+						//make movement decision based on index of shortest path
+						switch(maxIndex){
+							case GO_RIGHT:
+									oppositeFleeDirection = GO_LEFT;
+									ghostBlue.x += ghostBlue.speed;
+									if(ghostBlue.y == 108 && ghostBlue.x>=224) ghostBlue.x=0;
+								break;
+							case GO_LEFT:
+									oppositeFleeDirection = GO_RIGHT;
+									ghostBlue.x -= ghostBlue.speed;
+									if(ghostBlue.y == 108 && ghostBlue.x<=0) ghostBlue.x=224;
+								break;
+							case GO_UP:
+									oppositeFleeDirection = GO_DOWN;
+									ghostBlue.y -= ghostBlue.speed;
+								break;
+							case GO_DOWN:
+									oppositeFleeDirection = GO_UP;
+									ghostBlue.y += ghostBlue.speed;
+								break;
+							default:
+								break;
+						}
+
+						gdispImageDraw(&BLUE_FRIGHTENED,ghostBlue.x-7,ghostBlue.y-7,14,14,0,0);
+
+					}
+
+					//go back to original state
+					if(ghostBlue.x == 108 && ghostBlue.y == 84) {
+						eaten = 0;
+						ghostBlue.speed = 1;
+					}
+
+
+
+		// GHOST Blue: END ****************************************************************************************************************
+			//vTaskDelayUntil(&xLastWakeTime, Tick);
+		}

@@ -1,2 +1,2 @@
-# ESPL_Pacman
-Implementing Pacman Games Using FreeRTOS
+# espl-pacman
+The Pacman Project Repository
